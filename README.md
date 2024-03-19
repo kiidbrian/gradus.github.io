@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# gradus.github.io: Portfolio Website
 
 ```sh
 npm create astro@latest -- --template basics
