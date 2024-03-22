@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { ProjectItem } from "../types";
 
 type ProjectProps = {
@@ -6,11 +5,11 @@ type ProjectProps = {
 };
 
 const Project = ({ project }: ProjectProps) => {
-  const [stars, setStars] = useState();
+  // const [stars, setStars] = useState();
 
   return (
     <>
-      <h1>Project</h1>
+      <h1>{project.name}</h1>
     </>
   );
 };
