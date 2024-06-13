@@ -2,7 +2,7 @@
 layout: ../layouts/About.astro
 name: Brian Paintsil
 subname: kiidbrian
-avatarFront: img/me.jpg
+avatarFront: img/avatar-brian.png
 avatarBack: img/avatar.jpg
 tltr: I do machine learning by day and build things for the web by night.
 socials:
@@ -28,7 +28,7 @@ socials:
 
 I'm a software engineer with a rich background in deploying tech solutions across industries like E-commerce, FinTech, Payments, and Hospitality. My expertise spans Web and Mobile Development, Middleware Architecture, and Data Pipeline Integration. I've led the technological foundation of a US startup and enhanced a major Ghanaian Bank's data modeling capabilities through innovative cloud services. Dive into my journey of building impactful technology infrastructures and leading teams towards achieving operational excellence.
 
-Currently, I am pursuing my master's degree in [Data Science](https://www.stir.ac.uk/courses/pg-taught/data-science-for-business/) from the [University of Stirling](https://www.stir.ac.uk/). Previously, I received my bachelor degree in [Computer Science](http://sse.tongji.edu.cn/) from [Kwame Nkrumah University of Science and Technology](https://www.knust.edu.gh/)
+I currently pursuing my master's degree in [Data Science](https://www.stir.ac.uk/courses/pg-taught/data-science-for-business/) at the [University of Stirling](https://www.stir.ac.uk/), which i complete on September 12. Previously, I received my bachelor degree in [Computer Science](https://en.wikipedia.org/wiki/Computer_science) from [Kwame Nkrumah University of Science and Technology](https://www.knust.edu.gh/)
 
 ## Industry Experience
 
