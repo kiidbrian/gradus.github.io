@@ -3,7 +3,7 @@ import type { SocialObjects } from "./types";
 export const SITE = {
   website: "https://kiidbrian.github.io",
   title: "Brian Paintsil",
-  desc: "Changing the world a line of code a time",
+  desc: "Turning ideas into reality.",
   author: "Brian Paintsil",
   ogImage: "",
   lightAndDarkMode: true,
@@ -13,7 +13,7 @@ export const SITE = {
 
 export const LOGO_IMAGE = {
   enable: false,
-  svg: true,
+  svg: false,
   width: 216,
   height: 46,
 };

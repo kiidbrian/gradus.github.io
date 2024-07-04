@@ -2,6 +2,7 @@
 import {SITE} from "../config";
 import Layout from "./Layout.astro";
 import {Page, type SocialItem} from "../types";
+import FlipImage from "../components/FlipImage.astro";
 
 export interface Props {
   frontmatter: {
@@ -16,7 +17,7 @@ export interface Props {
   };
 }
 
-const {frontmatter} = Astro.props;
+const {title, avatarFront, avatarBack} = Astro.props.frontmatter;
 ---
 
 <Layout
@@ -28,9 +29,18 @@ const {frontmatter} = Astro.props;
 >
   <!-- <Breadcrumbs /> -->
   <main id="main-content">
-    <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
-      <slot />
-    </section>
+    <div class="flex flex-col flex-wrap">
+      <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
+        {
+          avatarFront && (
+            <div class="hidden ml-auto mb-4 mr-1 rotate-3 sm:block sm:size-40 sm:-mb-20 sm:mr-2">
+              <FlipImage front={avatarFront} back={avatarBack} alt="avatar" />
+            </div>
+          )
+        }
+        <h1 class="text-2xl tracking-wider sm:text-3xl">{title}</h1>
+        <slot />
+      </section>
+    </div>
   </main>
 </Layout>

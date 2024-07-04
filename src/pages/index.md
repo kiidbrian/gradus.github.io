@@ -2,8 +2,8 @@
 layout: ../layouts/About.astro
 name: Brian Paintsil
 subname: kiidbrian
-avatarFront: img/avatar-brian.png
-avatarBack: img/avatar.jpg
+avatarFront: img/avatar.png
+avatarBack: img/avatar.png
 tltr: I do machine learning by day and build things for the web by night.
 socials:
   - icon: i-academicons:cv
