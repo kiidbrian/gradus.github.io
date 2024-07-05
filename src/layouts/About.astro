@@ -3,6 +3,7 @@ import {SITE} from "../config";
 import Layout from "./Layout.astro";
 import {Page, type SocialItem} from "../types";
 import FlipImage from "../components/FlipImage.astro";
+import frontImage from "../../public/img/avatar.png";
 
 export interface Props {
   frontmatter: {
@@ -17,7 +18,7 @@ export interface Props {
   };
 }
 
-const {title, avatarFront, avatarBack} = Astro.props.frontmatter;
+const {title, avatarFront} = Astro.props.frontmatter;
 ---
 
 <Layout
@@ -34,7 +35,7 @@ const {title, avatarFront, avatarBack} = Astro.props.frontmatter;
         {
           avatarFront && (
             <div class="hidden ml-auto mb-4 mr-1 rotate-3 sm:block sm:size-40 sm:-mb-20 sm:mr-2">
-              <FlipImage front={avatarFront} back={avatarBack} alt="avatar" />
+              <FlipImage front={frontImage.src} back={frontImage.src} alt="avatar" />
             </div>
           )
         }
