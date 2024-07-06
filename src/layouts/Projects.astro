@@ -13,19 +13,30 @@ export interface Props {
 const {projects} = Astro.props.frontmatter;
 ---
 
-<Layout title={`Projects - ${SITE.title}`} activePage={Page.Projects}>
-  <h1>Projects</h1>
-  <slot />
-  {
-    Object.keys(projects).map((key) => (
-      <>
-        <h3>{key}</h3>
-        <div class="~ cols-1 sm:cols-2 gap-2" py-2>
-          {projects[key].map((project) => (
-            <Project client:load project={project} />
-          ))}
-        </div>
-      </>
-    ))
-  }
+<Layout
+  title={`Projects - ${SITE.title}`}
+  author=`${SITE.author}`
+  description=`${SITE.desc}`
+  activePage={Page.Projects}
+>
+  <main class="w-full">
+    <div class="flex flex-col">
+      <slot />
+      <section id="projects" class="prose mb-28 max-w-3xl prose-img:border-0">
+        <h2 class="mt-5">Projects</h2>
+        {
+          Object.keys(projects).map((key) => (
+            <div>
+              <h3>{key}</h3>
+              <div class="grid grid-cols-2 gap-4 py-2">
+                {projects[key].map((project) => (
+                  <Project project={project} />
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </section>
+    </div>
+  </main>
 </Layout>

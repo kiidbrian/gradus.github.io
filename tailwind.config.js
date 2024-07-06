@@ -1,3 +1,8 @@
+const {
+  iconsPlugin,
+  getIconCollections,
+} = require("@egoist/tailwindcss-icons");
+
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -71,5 +76,8 @@ export default {
   plugins: [
     require("@tailwindcss/typography"),
     require("@xpd/tailwind-3dtransforms"),
+    iconsPlugin({
+      collections: getIconCollections(["mdi", "lucide", "logos"]),
+    }),
   ],
 };

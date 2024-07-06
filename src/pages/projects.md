@@ -1,16 +1,16 @@
 ---
 layout: ../layouts/Projects.astro
 projects:
-  Websites / Online Tools:
-    - name: Portfolio
-      link: https://portfolio.zxh.io
-      desc: A portfolio website simulating macOS's GUI
+  Web Apps:
+    - name: kiidbrian.github.io
+      link: https://kiidbrian.github.io
+      desc: A personal website
       icon: i-ic:twotone-laptop-mac
       tech:
-        - i-logos:preact
-        - i-logos:typescript-icon
-        - i-logos:unocss
-        - i-logos:vitejs
+        - i-logos-astro-icon
+        - i-logos-react
+        - i-logos-typescript-icon
+        - i-logos-tailwindcss-icon
       repo: Renovamen/playground-macos
     - name: Oh My CV!
       link: https://ohmycv.app
@@ -78,7 +78,7 @@ projects:
         - i-logos:tailwindcss-icon
         - i-logos:vitejs
       repo: Renovamen/wordle-helper
-  JavaScript Libraries:
+  Mobile Apps:
     - name: VuePress Theme Gungnir
       link: https://github.com/Renovamen/vuepress-theme-gungnir
       desc: A blog theme for VuePress 2
@@ -147,5 +147,3 @@ projects:
         - i-logos:python
       repo: Renovamen/pcalg-py
 ---
-
-I'm trying to find a balance between research and engineering.
