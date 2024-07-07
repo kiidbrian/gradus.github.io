@@ -9,22 +9,22 @@ const Project = ({ project }: ProjectProps) => {
 
   return (
     <a
-      href="/"
+      href={project.link}
       target="_blank"
       rel="noopener noreferrer"
       className="no-underline"
     >
       <div className="flex-auto p-4 border border-[#e5e7eb] hover:bg-[#f3f4f6] hover:border-transparent">
-        <div className="flex align-center flex-wrap">
-          <div className="whitespace-nowrap mr-3">{project.name}</div>
-          <div className="flex align-center">
+        <div className="flex items-center flex-wrap">
+          <div className="whitespace-nowrap mr-3 text-lg">{project.name}</div>
+          <div className="flex space-x-2">
             {project.tech &&
               project.tech.map((icon) => (
-                <span className={`${icon} text-2xl`}></span>
+                <span className={`${icon} text-lg`}></span>
               ))}
           </div>
         </div>
-        <div className="text-sm">{project.desc}</div>
+        <div className="text-sm text-c-lighter/50">{project.desc}</div>
       </div>
     </a>
   );

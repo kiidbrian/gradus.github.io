@@ -20,6 +20,9 @@ export default {
       sm: "640px",
     },
     extend: {
+      colors: {
+        "c-lighter": "#1f2937",
+      },
       textColor: {
         skin: {
           base: withOpacity("--color-text-base"),
@@ -77,7 +80,7 @@ export default {
     require("@tailwindcss/typography"),
     require("@xpd/tailwind-3dtransforms"),
     iconsPlugin({
-      collections: getIconCollections(["mdi", "lucide", "logos"]),
+      collections: getIconCollections(["mdi", "lucide", "logos", "tabler", "mage"]),
     }),
   ],
 };

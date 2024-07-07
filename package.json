@@ -29,7 +29,9 @@
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@iconify-json/logos": "^1.1.43",
     "@iconify-json/lucide": "^1.1.198",
+    "@iconify-json/mage": "^1.1.0",
     "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/tabler": "^1.1.116",
     "@iconify/json": "^2.2.225",
     "@iconify/react": "^5.0.1"
   }

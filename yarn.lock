@@ -519,10 +519,24 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/mage@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mage/-/mage-1.1.0.tgz#080115e5a8d642ad17724619d02dd657d930f9dd"
+  integrity sha512-wXT8F49OpXgJu9MglzVx+D7ESJOVX4qerQj9QhCnWBVulcdmm7yv8wP0e3EEMrSEmW3tH4vLK4T3v9WbPTzpXw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/mdi@^1.1.67":
   version "1.1.67"
   resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.1.67.tgz#89e82b598c7bd98880a5f46a20f94c55038e1546"
   integrity sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/tabler@^1.1.116":
+  version "1.1.116"
+  resolved "https://registry.yarnpkg.com/@iconify-json/tabler/-/tabler-1.1.116.tgz#c540e5970125e34a80377b3ddbca696cf65d82a8"
+  integrity sha512-p+dJ+3L/M2o10REG2lh179Blu5+AA51TFkwuUwY7F+vQsF5Z8DIjyNck3yoBBiCxWqhDhsLzC+p9YO7dWqISmw==
   dependencies:
     "@iconify/types" "*"
 
