@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import {Page} from "../types";
 
 import "../styles/main.css";
+import {SEO} from "astro-seo";
 
 interface Props {
   title: string;
@@ -22,36 +23,35 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-
-    <!-- <link rel="icon" href="/favicon.png" type="image/png" /> -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
-
-    <link rel="canonical" href={canonicalURL} />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-
-    <!-- General Meta Tags -->
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <meta name="author" content={author} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalURL} />
-
-    <!-- Twitter -->
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:url" content={canonicalURL} />
-
+    <SEO
+      title={title}
+      description={description}
+      twitter={{creator: "@kiidbrian"}}
+      canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          title: title,
+          type: "A type .",
+          image:
+            "https://drive.google.com/file/d/1gYRqljHKi9MqU643nSDfqdqrdPHTOlNM/view?usp=drive_link",
+        },
+      }}
+      extend={{
+        link: [{rel: "icon", href: "/favicon.ico"}],
+        meta: [
+          {
+            name: "twitter:image",
+            content:
+              "https://drive.google.com/file/d/1gYRqljHKi9MqU643nSDfqdqrdPHTOlNM/view?usp=drive_link",
+          },
+          {
+            name: "twitter:title",
+            content: "Brian Paintsil <The Pragmatic Dev>",
+          },
+          {name: "twitter:description", content: "Turning ideas into reality"},
+        ],
+      }}
+    />
     <ViewTransitions />
   </head>
   <body class="font-sans">
