@@ -31,9 +31,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       openGraph={{
         basic: {
           title: title,
-          type: "A type .",
+          type: "website",
           image:
             "https://drive.google.com/file/d/1gYRqljHKi9MqU643nSDfqdqrdPHTOlNM/view?usp=drive_link",
+        },
+        image: {
+          url: "https://drive.google.com/file/d/1gYRqljHKi9MqU643nSDfqdqrdPHTOlNM/view?usp=drive_link",
         },
       }}
       extend={{
